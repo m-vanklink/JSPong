@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+		<head>
+				<title>Michael Van Klink Pong</title>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<script type="text/javascript" src="JavaScript/pong.js"></script>
+		</head>
+		
+		<body onload="startAni();" onkeydown="keyPressed(event)">
+				
+				<canvas id="myCanvas" width="1000" height="500" style="border: 5px solid lightsteelblue;
+								background-color: black;">
+				</canvas>
+				
+				<div style="width: 1000px; height: 50px;">
+						<p style="display: inline; font-size: 40px;">Player 1: 
+								<span id="player1">2</span>
+						</p>
+						
+						<div style="width: 300px; height: 50px; display: inline;">
+								
+								<span id="winner1" style=" height: 50px; width: 450px; 
+											font-size: 40px; position: absolute; z-index: 1;
+											text-align: center; visibility: hidden;">
+										Player 1 Wins!
+								</span>
+								
+							  <span id="winner2" style=" height: 50px; width: 450px; 
+											font-size: 40px; position: absolute; z-index: 2; 
+											text-align: center; visibility: hidden;">
+										Player 2 Wins!
+								</span>
+								
+						</div>
+						
+						<p style="display: inline; font-size: 40px; padding-left: 543px;">
+								Player 2: <span id="player2">2</span>
+						</p>
+						
+				</div>
+				<div style="width: 1000px; height: 50px;">
+						
+						<p style="display: inline; font-size: 18px;">
+								Player 1 Controls: W S
+						</p>
+						
+						<p style="padding-left: 555px; display: inline; font-size: 18px;">
+								Player 2 Controls: Up/Down Arrows
+						</p>
+				</div>
+				
+				
+		</body>
+</html>
